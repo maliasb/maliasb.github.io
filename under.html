@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Understyle </title>
+	<link 
+  href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Montserrat|Work+Sans:200"         
+    rel="stylesheet">
+    <meta charset="UTF-8">
+
+<!-- some codes from w3schools, codepen; photos from pinterest :) --> 
+  <div class="understyle">
+ <img
+src="https://pbs.twimg.com/media/DqTUriiUwAA-uMe.jpg:small"
+  id="logo">
+  </div>
+
+<style>
+* {box-sizing: border-box}
+
+ html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+#logo {
+    display:block;
+    max-width: 250px;
+    margin: auto;
+    padding: 8px;
+}
+
+.tablink {
+  background-color: #eff7ad;
+  color: gray;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#dresssketchcrop{
+    width: 40%;
+    height: auto;
+    float: left;
+  }
+ 
+#dresssketchcrop2{
+    width: 40%;
+    height: auto;
+    float: right;
+}
+
+h2{
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  font-size: 47px;
+  font-weight: 100;
+  text-align: center;
+  letter-spacing: 0.5rem;
+  margin: 4rem 0 0 0;
+}
+ 
+p{
+  text-align:center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 19px;
+  color: #4a8692;
+  max-width:700px;
+  margin:20px auto;
+  padding: 30px;
+  background: #eff7ad;
+}
+
+body{
+   background-color: white;
+   border: 50px;
+  }
+
+.container{
+  display: flex;
+  padding: 40px;
+  color: #212121;
+  font-family: "Montserrat";
+  font-size: 14px;
+  width: 95%;
+  background: #ffffff;
+  line-height: 1.4em;
+}
+
+.panel{
+  background: #e9c6af;
+  margin: 10px;
+  padding: 5%;
+  border: 16px solid;
+  border-color: #D8D8D8;
+}
+
+#second, #third{
+  background-color: #F8E0F7;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+i,
+span,
+ {
+  font-family: "Lato", sans-serif;
+}
+section {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  text-align: center;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  margin: 4rem 0 0 0;
+}
+.list {
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 5rem 0;
+}
+.list > div {
+  width: 200px;
+  float: left;
+  height: 300px;
+  background: #fff;
+  margin: 1%;
+  position: relative;
+}
+.product > div {
+  text-align: center;
+  position: absolute;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  bottom: 0;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+}
+.product:hover > div {
+  position: absolute;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.5);
+}
+.product > img {
+ 
+    position: relative;
+    float: left;
+    width:  300px;
+    height: 300px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+}
+.product:hover > img {
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+}
+.product > div > h2 {
+  border-bottom: 1px solid #818181;
+  padding: 0 0 1rem;
+}
+.descr {
+  font-size: 12px;
+  padding: 2rem;
+  line-height: 1.2rem;
+}
+.product > div > a > p {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  line-height: 2rem;
+  background: #000;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  margin: 0 auto !important;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.product > div > a > p:hover {
+  background: linear-gradient(
+    to right,
+    #ff6a00,
+    #ee0979
+  );
+  bottom: 5px;
+  letter-spacing: 4px;
+}
+
+
+#Home {background-color: white;}
+#Blog {background-color: white;}
+#Shop {background-color: white;}
+#Contact {background-color: white;}
+</style>
+</head>
+<body>
+
+<button class="tablink" onclick="openPage('Home', this, 'lavender')"id="defaultOpen">Home</button>
+<button class="tablink" onclick="openPage('Blog', this, 'lavender')" >Blog</button>
+<button class="tablink" onclick="openPage('Shop', this, 'lavender')">Shop</button>
+<button class="tablink" onclick="openPage('Contact', this, 'lavender')">Contact Us</button>
+
+<div id="Home" class="tabcontent">
+<div>
+<h2> W E L C O M E ! </h2>
+  <hr>
+  <p> Understyle is a fashion blog and store primarily for college girls (& guys!) to sell boutique clothing & accessories, and share their favorite fashion tips, tricks & finds across the world </p>
+<hr>
+</div>
+
+<div>
+  <img
+src="https://pbs.twimg.com/media/DqTUxLGUwAAqOck.jpg:large"
+      id="dresssketchcrop"
+       alt="dresses">
+  
+  <img
+src="https://pbs.twimg.com/media/DqTUvBqU4AAepTZ.jpg"
+       id="dresssketchcrop2"
+       alt="dresses2">
+</div>
+
+<div class="links">
+    </br></br></br></br></br></br>
+<a href=
+   "https://twitter.com/understyle15"> <p> follow us on Twitter </p> </a> <br> </br> </br> </br>
+ <a href=
+   "https://instagram.com"> <p> find us on Insta </p>
+      </a> 
+  </div> 
+    </div>
+
+<div id="Blog" class="tabcontent">
+
+<div class="container">
+  <div class ="panel" id="first">
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id mi consequat, viverra libero vitae, convallis sem. Sed vehicula vitae nulla id semper. Phasellus vitae felis quam. Vivamus varius libero et ornare lacinia
+</div>
+  
+  <div class="panel" id="second"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id mi consequat, viverra libero vitae, convallis sem.</div>
+  
+  <div class="panel" id="third"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id mi consequat, viverra libero vitae, convallis sem.</div>
+  
+  <div class="panel" id="fourth"> 
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id mi consequat, viverra libero vitae, convallis sem. Sed vehicula vitae nulla id semper. Phasellus vitae felis quam. Vivamus varius libero et ornare lacinia
+ </div>
+     </div>
+
+</div>
+
+
+<div id="Shop" class="tabcontent">
+<section>
+  <h1>Heartmade items just for you</h1>
+<div class="list">
+			<div class="product">
+				<img alt="shoes1" src="https://i.pinimg.com/564x/01/46/34/0146340f847b44b1b91321c478e7e87b.jpg">
+				<div><h2>Little Mesh Dress</h2>
+          <p class="price">15<sup>.00</sup></p>
+          <p class="descr">Everyone will be starry-eyed, looking at you in this blush pink mesh dress</p>
+				<br>
+				<a href="#"><p>Add to cart</p></a></div>
+			</div>
+			<div class="product">
+				<img alt="shoes2" src="https://i.pinimg.com/564x/ff/1b/c6/ff1bc6a09bf0343511511719ee8ef637.jpg">
+				<div><h2>Forest Green Jacket</h2>
+           <p class="price">15<sup>.00</sup></p>
+          <p class="descr">Camping, shopping, roadtrips or flights, this jacket can go everywhere and anywhere</p>
+				<br>
+				<a href="#"><p>Add to cart</p></a></div>
+			</div>
+			<div class="product">
+				<img alt="shoes3" src="https://i.pinimg.com/564x/10/ad/94/10ad9478e9d2ef203102a45cf832eba8.jpg">
+				<div><h2>Fairytale Dress</h2>
+           <p class="price">15<sup>.00</sup></p>
+          <p class="descr">Be whimsical and free in this blue beauty</p>
+				<br>
+				<a href="#"><p>Add to cart</p></a></div>
+			</div>
+ 			<div class="product">
+				<img alt="shoes4" src="https://i.pinimg.com/564x/80/79/26/80792640f5e75bb96d587e7e3871cb6c.jpg">
+				<div><h2>Sunflower Happiness</h2>
+           <p class="price">15<sup>.00</sup></p>
+          <p class="descr">Handpainted just for you, these sunflower overalls will be the talk of the town</p>
+				<br>
+				<a href="#"><p>Add to cart</p></a></div>
+			</div> 
+</div>
+</section>
+</div>
+
+<div id="Contact" class="tabcontent">
+  
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p> We pinky promise to get back to you, lovely!</p>
+  </div>
+  <div class="row">
+   
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">USA</option>
+          <option value="canada">Canada</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="What would you like to tell Understyle HQ?" style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
